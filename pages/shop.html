@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop Premium Grip Socks — Grippy Sox Club</title>
   <meta name="description" content="Shop ultra-soft, non-slip grip socks designed for comfort and safety. Premium bamboo-blend fabric with hospital-grade grip. Free shipping over $50.">
+  <meta name="theme-color" content="#2D5A3D">
+  <link rel="canonical" href="https://grippysoxclub.com/pages/shop.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +16,14 @@
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/accessibility.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
 </head>
 <body class="page-transition">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
-  <div class="announcement-bar">
+  <div class="announcement-bar" role="banner">
     <div class="container">Free shipping on orders over $50 &bull; <a href="shop.html">Shop Now</a></div>
   </div>
 
@@ -31,9 +35,9 @@
         </div>
         Grippy Sox Club
       </a>
-      <nav class="nav-main" id="nav-main">
+      <nav class="nav-main" id="nav-main" aria-label="Main navigation">
         <a href="../index.html" class="nav-link">Home</a>
-        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="shop.html" class="nav-link active" aria-current="page">Shop</a>
         <a href="about.html" class="nav-link">Our Story</a>
         <a href="facilities.html" class="nav-link">For Facilities</a>
         <a href="blog.html" class="nav-link">Journal</a>
@@ -50,6 +54,7 @@
   </header>
 
   <!-- Page Header -->
+  <main id="main-content">
   <section class="section--sm bg-cream">
     <div class="container text-center">
       <span class="overline">The Collection</span>
@@ -298,8 +303,10 @@
     </div>
   </section>
 
+  </main>
+
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -319,7 +326,7 @@
 
   <!-- Cart Drawer -->
   <div class="cart-overlay" id="cart-overlay"></div>
-  <div class="cart-drawer" id="cart-drawer">
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-hidden="true">
     <div class="cart-drawer__header">
       <h3 class="cart-drawer__title">Your Cart</h3>
       <button class="cart-drawer__close" id="cart-close" aria-label="Close cart">&times;</button>
@@ -337,7 +344,9 @@
     </div>
   </div>
 
-  <script src="../js/main.js"></script>
-  <script src="../js/shopify-buy.js"></script>
+  <button class="back-to-top" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/shopify-buy.js" defer></script>
 </body>
 </html>

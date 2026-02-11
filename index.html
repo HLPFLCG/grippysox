@@ -7,11 +7,26 @@
   <meta name="description" content="Premium non-slip grip socks designed for comfort, safety, and self-care. Reclaiming the grippy sock as a symbol of resilience. Shop cozy, therapeutic socks with hospital-grade grip.">
   <meta name="keywords" content="grippy socks, grip socks, non-slip socks, mental health gifts, hospital socks, grippy sock vacation, comfort socks, therapeutic socks">
 
+  <!-- Performance -->
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://sdks.shopifycdn.com">
+  <meta name="theme-color" content="#2D5A3D">
+  <link rel="canonical" href="https://grippysoxclub.com/">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Grippy Sox Club — Premium Comfort Grip Socks">
   <meta property="og:description" content="Reclaiming the grippy sock as a symbol of comfort and resilience. Premium non-slip socks for mental health & wellness.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://grippysoxclub.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Grippy Sox Club">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grippy Sox Club — Premium Comfort Grip Socks">
+  <meta name="twitter:description" content="Reclaiming the grippy sock as a symbol of comfort and resilience. Premium non-slip socks for mental health & wellness.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,14 +38,42 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/accessibility.css">
 
   <!-- Favicon placeholder -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Grippy Sox Club",
+    "url": "https://grippysoxclub.com",
+    "description": "Premium non-slip grip socks designed for comfort, safety, and self-care.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@grippysoxclub.com",
+      "contactType": "customer service"
+    },
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Grippy Sox Club",
+    "url": "https://grippysoxclub.com"
+  }
+  </script>
 </head>
 <body>
+  <!-- Skip to Main Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ====== Announcement Bar ====== -->
-  <div class="announcement-bar" id="announcement-bar">
+  <div class="announcement-bar" id="announcement-bar" role="banner">
     <div class="container">
       Free shipping on orders over $50 &nbsp;&bull;&nbsp; <a href="pages/shop.html">Shop the Collection</a>
     </div>
@@ -50,8 +93,8 @@
         Grippy Sox Club
       </a>
 
-      <nav class="nav-main" id="nav-main">
-        <a href="index.html" class="nav-link active">Home</a>
+      <nav class="nav-main" id="nav-main" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
         <a href="pages/shop.html" class="nav-link">Shop</a>
         <a href="pages/about.html" class="nav-link">Our Story</a>
         <a href="pages/facilities.html" class="nav-link">For Facilities</a>
@@ -76,6 +119,7 @@
   </header>
 
   <!-- ====== Hero Section ====== -->
+  <main id="main-content">
   <section class="hero section--lg">
     <div class="hero__bg-pattern"></div>
     <div class="container">
@@ -675,8 +719,10 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ====== Footer ====== -->
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -742,7 +788,7 @@
 
   <!-- ====== Cart Drawer ====== -->
   <div class="cart-overlay" id="cart-overlay"></div>
-  <div class="cart-drawer" id="cart-drawer">
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-hidden="true">
     <div class="cart-drawer__header">
       <h3 class="cart-drawer__title">Your Cart</h3>
       <button class="cart-drawer__close" id="cart-close" aria-label="Close cart">&times;</button>
@@ -768,8 +814,13 @@
     </div>
   </div>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
   <!-- ====== Scripts ====== -->
-  <script src="js/main.js"></script>
-  <script src="js/shopify-buy.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/shopify-buy.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,2 @@
+# Redirect www to non-www
+https://www.grippysoxclub.com/* https://grippysoxclub.com/:splat 301
