@@ -1,41 +1,54 @@
 /* ============================================
    GRIPPY SOX CLUB — Design System Variables
+   ============================================
+   Brand Words: vulnerability, resilience,
+   perseverance, tranquility
    ============================================ */
 
 :root {
-  /* ---- Brand Colors ---- */
-  --color-primary: #2D5A3D;        /* Deep forest green — trust, health, calm */
-  --color-primary-light: #3A7550;
-  --color-primary-dark: #1E3D2A;
-  --color-primary-50: #EDF5F0;
-  --color-primary-100: #D4E8DB;
-  --color-primary-200: #A9D1B7;
+  /* ---- Primary: Blue — Tranquility, Trust ---- */
+  --color-primary: #3D6E8E;          /* Calm steel blue — tranquility, trust */
+  --color-primary-light: #5A8CAB;
+  --color-primary-dark: #2C5570;
+  --color-primary-50: #EEF4F8;
+  --color-primary-100: #D5E4EE;
+  --color-primary-200: #ABCADD;
 
-  --color-accent: #E8985A;         /* Warm terracotta — comfort, warmth */
-  --color-accent-light: #F0B07A;
+  /* ---- Pink — Vulnerability, Warmth ---- */
+  --color-pink: #C4788A;             /* Dusty rose — vulnerability, openness */
+  --color-pink-light: #D494A4;
+  --color-pink-dark: #A85E70;
+  --color-pink-50: #F9F0F2;
+  --color-pink-100: #F0D9DE;
+  --color-pink-200: #E1B3BD;
+
+  /* ---- Orange (Accent) — Perseverance, Energy ---- */
+  --color-accent: #E8945A;           /* Warm amber — perseverance, vitality */
+  --color-accent-light: #F0AC7A;
   --color-accent-dark: #D07A3A;
 
-  --color-secondary: #6B4C8A;      /* Muted purple — mental health awareness */
-  --color-secondary-light: #8A6BA8;
-  --color-secondary-50: #F3EFF7;
+  /* ---- Secondary: Pink (Mental Health) ---- */
+  --color-secondary: #C4788A;
+  --color-secondary-light: #D494A4;
+  --color-secondary-50: #F9F0F2;
 
   /* ---- Neutrals ---- */
-  --color-cream: #FBF8F4;
+  --color-cream: #FBF8F4;            /* Cream — softness, safety */
   --color-warm-white: #FEFCF9;
   --color-sand: #F5F0E8;
   --color-taupe: #B8A99A;
-  --color-charcoal: #2C2C2C;
-  --color-dark: #1A1A1A;
+  --color-charcoal: #1C1C1E;         /* Near-black — resilience, strength */
+  --color-dark: #1A1A1A;             /* Black — resilience, grounding */
   --color-muted: #6B6B6B;
   --color-light-muted: #9B9B9B;
   --color-border: #E8E2D8;
   --color-border-light: #F0ECE4;
 
   /* ---- Semantic Colors ---- */
-  --color-success: #3A7550;
-  --color-warning: #E8985A;
+  --color-success: #3D8E6E;
+  --color-warning: #E8945A;
   --color-error: #C94444;
-  --color-info: #4A7FB5;
+  --color-info: #3D6E8E;
 
   /* ---- Typography ---- */
   --font-display: 'DM Serif Display', Georgia, serif;
@@ -114,7 +127,7 @@
   --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
   --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.16);
   --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
-  --shadow-glow: 0 0 24px rgba(45, 90, 61, 0.15);
+  --shadow-glow: 0 0 24px rgba(61, 110, 142, 0.15);
 
   /* ---- Transitions ---- */
   --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);

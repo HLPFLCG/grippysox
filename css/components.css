@@ -388,7 +388,7 @@
   font-size: var(--text-lg);
   padding: var(--space-8);
   text-align: center;
-  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-primary-100) 50%, #d4e8db 100%);
+  background: linear-gradient(135deg, var(--color-primary-50) 0%, var(--color-primary-100) 50%, var(--color-pink-50) 100%);
 }
 
 .hero__image-placeholder svg {
@@ -439,7 +439,7 @@
 }
 
 .hero__float-card--bottom .hero__float-icon {
-  background: #FEF3E8;
+  background: var(--color-pink-50);
   color: var(--color-accent);
 }
 
@@ -702,7 +702,7 @@
 }
 
 .feature-card__icon--accent {
-  background: #FEF3E8;
+  background: var(--color-pink-50);
   color: var(--color-accent);
 }
 
