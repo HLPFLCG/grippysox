@@ -486,6 +486,86 @@
     });
   }
 
+  // ---- Animated Number Counters ----
+  function initCounters() {
+    var counters = document.querySelectorAll('.counter[data-target]');
+    if (!counters.length) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(function(counter) {
+      observer.observe(counter);
+    });
+
+    function animateCounter(el) {
+      var target = parseInt(el.getAttribute('data-target'));
+      var prefix = el.getAttribute('data-prefix') || '';
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 2000;
+      var start = 0;
+      var startTime = null;
+
+      el.setAttribute('data-counting', 'true');
+
+      function easeOutQuart(t) {
+        return 1 - Math.pow(1 - t, 4);
+      }
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var easedProgress = easeOutQuart(progress);
+        var current = Math.floor(easedProgress * target);
+
+        el.textContent = prefix + current.toLocaleString() + suffix;
+
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          el.textContent = prefix + target.toLocaleString() + suffix;
+          el.removeAttribute('data-counting');
+        }
+      }
+
+      window.requestAnimationFrame(step);
+    }
+  }
+
+  // ---- Parallax Scroll Effect (Subtle) ----
+  function initParallax() {
+    var parallaxElements = document.querySelectorAll('[data-parallax]');
+    if (!parallaxElements.length) return;
+
+    // Respect reduced motion preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          var scrollY = window.pageYOffset;
+          parallaxElements.forEach(function(el) {
+            var speed = parseFloat(el.getAttribute('data-parallax')) || 0.1;
+            var rect = el.getBoundingClientRect();
+            var elementCenter = rect.top + rect.height / 2;
+            var viewportCenter = window.innerHeight / 2;
+            var offset = (elementCenter - viewportCenter) * speed;
+            el.style.transform = 'translateY(' + offset + 'px)';
+          });
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+  }
+
   // ---- Set ARIA Current on Active Nav ----
   function initAriaCurrent() {
     document.querySelectorAll('.nav-link.active').forEach(function(link) {
@@ -511,6 +591,8 @@
     initBlogFilters();
     initBackToTop();
     initAriaCurrent();
+    initCounters();
+    initParallax();
   }
 
   // Run on DOM ready
