@@ -24,7 +24,7 @@
   // ================================================================
   var CONFIG = {
     // Your Shopify store domain (e.g., 'grippy-sox-club.myshopify.com')
-    domain: 'YOUR_STORE.myshopify.com',
+    domain: '0iyneq-ay.myshopify.com',
 
     // Storefront Access Token from Shopify Admin > Apps > Buy Button
     storefrontAccessToken: 'YOUR_STOREFRONT_ACCESS_TOKEN',
@@ -72,7 +72,7 @@
   var shopifyCart = null;
 
   function initShopify() {
-    if (CONFIG.domain === 'YOUR_STORE.myshopify.com') {
+    if (CONFIG.storefrontAccessToken === 'YOUR_STOREFRONT_ACCESS_TOKEN') {
       console.info(
         'Grippy Sox: Shopify not configured yet. Running in demo mode.\n' +
         'To connect your Shopify store, update the CONFIG object in js/shopify-buy.js'
