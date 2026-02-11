@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — Grippy Sox Club | Reclaiming the Grippy Sock</title>
+  <meta name="description" content="Grippy Sox Club is reclaiming the grippy sock as a symbol of comfort and resilience. Learn about our mission to bring premium comfort to behavioral health and self-care.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
+
+  <style>
+    .about-hero { background: linear-gradient(160deg, var(--color-primary-50) 0%, var(--color-cream) 100%); }
+    .story-section { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center; }
+    .story-image { aspect-ratio: 4/3; border-radius: var(--radius-xl); overflow: hidden; background: var(--color-sand); display: flex; align-items: center; justify-content: center; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
+    .value-card { text-align: center; padding: var(--space-8); }
+    .value-card__icon { width: 72px; height: 72px; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-5); font-size: var(--text-2xl); }
+    .timeline { max-width: 640px; margin: 0 auto; position: relative; }
+    .timeline::before { content: ''; position: absolute; left: 20px; top: 0; bottom: 0; width: 2px; background: var(--color-border); }
+    .timeline-item { padding-left: 56px; padding-bottom: var(--space-8); position: relative; }
+    .timeline-item::before { content: ''; position: absolute; left: 14px; top: 4px; width: 14px; height: 14px; border-radius: var(--radius-full); background: var(--color-primary); border: 3px solid white; box-shadow: 0 0 0 2px var(--color-primary-200); }
+    .timeline-item__date { font-size: var(--text-xs); font-weight: var(--weight-bold); letter-spacing: var(--tracking-wider); text-transform: uppercase; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .timeline-item__title { font-weight: var(--weight-semibold); margin-bottom: var(--space-2); }
+    .timeline-item__text { font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed); }
+    @media (max-width: 768px) {
+      .story-section { grid-template-columns: 1fr; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="page-transition">
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><div class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg></div>Grippy Sox Club</a>
+      <nav class="nav-main" id="nav-main">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link active">Our Story</a>
+        <a href="facilities.html" class="nav-link">For Facilities</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="facilities.html" class="btn btn--primary btn--sm">Request Samples</a>
+        <button class="cart-button" id="cart-toggle" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="about-hero section">
+    <div class="container text-center">
+      <span class="overline reveal">Our Story</span>
+      <h1 class="display mt-4 reveal" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+        Reclaiming the Grippy Sock
+      </h1>
+      <p class="lead mt-6 reveal" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+        What started as a cultural phenomenon became a mission: turn a symbol of crisis into a symbol of comfort, resilience, and human dignity.
+      </p>
+    </div>
+  </section>
+
+  <!-- The Story -->
+  <section class="section">
+    <div class="container">
+      <div class="story-section">
+        <div class="reveal-left">
+          <div class="story-image" style="background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100));">
+            <div style="text-align: center; color: var(--color-primary); opacity: 0.6;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              <p style="margin-top: var(--space-2); font-weight: 600; font-size: var(--text-sm);">Founder Photo</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <span class="overline">The Beginning</span>
+          <h2 class="h2 mt-4">It started with uncomfortable socks.</h2>
+          <p class="mt-6" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            If you've ever been a patient in a psychiatric facility — or loved someone who has — you know the socks. Thin, scratchy, one-size-fits-nobody polyester with rubber dots that peel off after one walk down the hallway.
+          </p>
+          <p class="mt-4" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            You're already at your most vulnerable. Your shoes are taken away. And the socks they give you make you feel like an afterthought. Like your comfort doesn't matter.
+          </p>
+          <p class="mt-4" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            <strong style="color: var(--color-charcoal);">We believe it should be different.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Movement -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="story-section">
+        <div class="reveal-left" style="order: 1;">
+          <span class="overline">The Movement</span>
+          <h2 class="h2 mt-4">The "Grippy Sock Vacation"</h2>
+          <p class="mt-6" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            Millions of people started calling psychiatric stays "grippy sock vacations" — using humor to destigmatize one of life's hardest experiences. The term spread across social media, creating an unexpected community of people who understood.
+          </p>
+          <p class="mt-4" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            We saw something powerful in that. Not mockery, but reclamation. The grippy sock became a shared symbol — a way to say "I've been there, and I'm still here."
+          </p>
+          <p class="mt-4" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            <strong style="color: var(--color-charcoal);">Grippy Sox Club exists to make that symbol something worth wearing.</strong>
+          </p>
+        </div>
+        <div class="reveal-right">
+          <div class="story-image" style="background: linear-gradient(135deg, var(--color-secondary-50), #e0d0ee);">
+            <div style="text-align: center; color: var(--color-secondary); opacity: 0.6;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <p style="margin-top: var(--space-2); font-weight: 600; font-size: var(--text-sm);">Community Photo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">What We Believe</span>
+        <h2 class="h2">Our Values</h2>
+      </div>
+      <div class="values-grid stagger-children">
+        <div class="value-card">
+          <div class="value-card__icon" style="background: var(--color-primary-50); color: var(--color-primary);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="h4">Dignity First</h3>
+          <p class="mt-2" style="font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed);">Every person deserves to feel like a person — not a patient, not a number, not an afterthought. Our products are designed to preserve dignity at every touchpoint.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon" style="background: #FEF3E8; color: var(--color-accent);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="h4">Safety Without Compromise</h3>
+          <p class="mt-2" style="font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed);">Hospital-grade grip and behavioral health safety features aren't optional. Comfort and safety aren't opposites — they're partners.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon" style="background: var(--color-secondary-50); color: var(--color-secondary);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="h4">Community Over Stigma</h3>
+          <p class="mt-2" style="font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed);">Mental health isn't a weakness. We're here to normalize the conversation, support the community, and turn shared experience into shared strength.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section bg-sand">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">Our Journey</span>
+        <h2 class="h2">The Road So Far</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-item__date">The Spark</div>
+          <div class="timeline-item__title">An uncomfortable pair of socks</div>
+          <div class="timeline-item__text">A personal experience with the standard-issue hospital sock — and the realization that comfort matters most when you're at your most vulnerable.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__date">Research</div>
+          <div class="timeline-item__title">Discovering the gap</div>
+          <div class="timeline-item__text">Learning that 1,200+ psychiatric facilities all distribute the same $0.80 commodity sock. That a single patient fall costs $14,000+. That better socks exist — but nobody was making them for behavioral health.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__date">Development</div>
+          <div class="timeline-item__title">Building the better sock</div>
+          <div class="timeline-item__text">Prototyping with bamboo-viscose blends, testing silicone grip patterns, consulting with nursing staff, and designing for behavioral health safety standards.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__date">Launch</div>
+          <div class="timeline-item__title">Grippy Sox Club is born</div>
+          <div class="timeline-item__text">Our first collection launches — bridging the gap between clinical necessity and consumer comfort. Premium socks that facilities want to provide and people actually want to wear.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-item__date">Today</div>
+          <div class="timeline-item__title">Growing the mission</div>
+          <div class="timeline-item__text">Expanding to facilities nationwide, growing our D2C community, and proving that patient comfort isn't a luxury — it's a standard of care.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="cta-section section" id="contact">
+    <div class="container text-center relative" style="z-index:1;">
+      <div style="max-width: 540px; margin: 0 auto;">
+        <h2 class="h2">Let's Connect</h2>
+        <p class="lead mt-4">Whether you're a healthcare facility, a journalist, or just someone who believes comfort matters — we'd love to hear from you.</p>
+        <div class="flex justify-center gap-4 mt-8" style="flex-wrap: wrap;">
+          <a href="mailto:hello@grippysoxclub.com" class="btn btn--white btn--lg">Email Us</a>
+          <a href="facilities.html" class="btn btn--accent btn--lg">Request Facility Samples</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="logo"><div class="logo-icon" style="background:rgba(255,255,255,0.15)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg></div>Grippy Sox Club</a><p>Premium comfort grip socks for mental health, self-care, and safety.</p></div>
+        <div><h4 class="footer-heading">Shop</h4><nav class="footer-links"><a href="shop.html">All Products</a><a href="shop.html">Gift Bundles</a></nav></div>
+        <div><h4 class="footer-heading">Company</h4><nav class="footer-links"><a href="about.html">Our Story</a><a href="facilities.html">For Facilities</a><a href="blog.html">Journal</a></nav></div>
+        <div><h4 class="footer-heading">Support</h4><nav class="footer-links"><a href="#">Shipping & Returns</a><a href="#">Size Guide</a><a href="#">FAQ</a></nav></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Grippy Sox Club.</p><p>Made with care.</p></div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header"><h3 class="cart-drawer__title">Your Cart</h3><button class="cart-drawer__close" id="cart-close">&times;</button></div>
+    <div class="cart-drawer__items" id="cart-items"><div class="cart-drawer__empty"><h4 class="h4">Your cart is empty</h4></div></div>
+    <div class="cart-drawer__footer" id="cart-footer" style="display:none;"><div class="cart-drawer__subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div><button class="btn btn--primary btn--block btn--lg" id="checkout-btn">Checkout</button></div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/shopify-buy.js"></script>
+</body>
+</html>

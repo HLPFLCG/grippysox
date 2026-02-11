@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Premium Grip Socks — Grippy Sox Club</title>
+  <meta name="description" content="Shop ultra-soft, non-slip grip socks designed for comfort and safety. Premium bamboo-blend fabric with hospital-grade grip. Free shipping over $50.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
+</head>
+<body class="page-transition">
+
+  <!-- Header -->
+  <div class="announcement-bar">
+    <div class="container">Free shipping on orders over $50 &bull; <a href="shop.html">Shop Now</a></div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg>
+        </div>
+        Grippy Sox Club
+      </a>
+      <nav class="nav-main" id="nav-main">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="facilities.html" class="nav-link">For Facilities</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="facilities.html" class="btn btn--primary btn--sm">Request Samples</a>
+        <button class="cart-button" id="cart-toggle" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="section--sm bg-cream">
+    <div class="container text-center">
+      <span class="overline">The Collection</span>
+      <h1 class="h1 mt-4">Shop Grippy Sox</h1>
+      <p class="lead mt-4" style="max-width: 540px; margin-left: auto; margin-right: auto;">Premium non-slip socks engineered for comfort, safety, and self-care. Every pair ships with purpose.</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="section--sm" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="flex items-center justify-center gap-4" style="flex-wrap: wrap;">
+        <button class="btn btn--sm btn--primary" data-filter="all">All</button>
+        <button class="btn btn--sm btn--ghost" data-filter="everyday">Everyday</button>
+        <button class="btn btn--sm btn--ghost" data-filter="therapeutic">Therapeutic</button>
+        <button class="btn btn--sm btn--ghost" data-filter="bundles">Bundles & Gifts</button>
+        <button class="btn btn--sm btn--ghost" data-filter="facility">Facility Packs</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--3 stagger-children">
+
+        <!-- Product 1 -->
+        <div class="product-card" data-category="everyday">
+          <div class="product-card__badge"><span class="badge badge--accent">Best Seller</span></div>
+          <a href="product.html">
+            <div class="product-card__image">
+              <div class="product-card__image-placeholder">
+                <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+                <span>Product Photo</span>
+              </div>
+              <div class="product-card__quick-add">
+                <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="comfort-classic">Quick Add</button>
+              </div>
+            </div>
+          </a>
+          <div class="product-card__body">
+            <div class="product-card__category">Everyday Comfort</div>
+            <h3 class="product-card__title"><a href="product.html">The Comfort Classic</a></h3>
+            <p class="product-card__description">Our signature bamboo-blend grip sock. Ultra-soft, breathable, and designed to make you feel at home anywhere.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$14.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">4.9</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="therapeutic">
+          <div class="product-card__badge"><span class="badge badge--primary">New</span></div>
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="grounding-grip">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Therapeutic</div>
+            <h3 class="product-card__title">The Grounding Grip</h3>
+            <p class="product-card__description">Enhanced tread pattern for maximum stability. Calming lavender-infused fabric for a grounding experience.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$17.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">5.0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="bundles">
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="resilience-bundle">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Gift Bundle</div>
+            <h3 class="product-card__title">The Resilience Bundle</h3>
+            <p class="product-card__description">Three pairs of our most-loved styles in a beautiful gift box. The perfect care package for someone you love.</p>
+            <div class="product-card__footer">
+              <div><span class="product-card__price">$39.99</span> <span class="product-card__price-compare">$44.97</span></div>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">4.8</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="everyday">
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="calm-crew">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Everyday Comfort</div>
+            <h3 class="product-card__title">The Calm Crew</h3>
+            <p class="product-card__description">Mid-calf height for extra warmth and coverage. Perfect for lounging, yoga, or those chilly hospital hallways.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$15.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9734; <span style="color: var(--color-muted); margin-left: 4px;">4.7</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="everyday">
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="brave-ankle">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Everyday Comfort</div>
+            <h3 class="product-card__title">The Brave Ankle</h3>
+            <p class="product-card__description">Low-cut ankle style for warmer days. Same premium grip and bamboo softness in a lighter silhouette.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$12.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">4.8</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="therapeutic">
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2"><path d="M30 75 C30 75 25 45 30 30 C35 15 50 10 55 15 C60 20 65 30 65 45 C65 55 70 65 75 70 C80 75 75 85 65 85 L35 85 C30 85 30 80 30 75Z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="cozy-cuff">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Therapeutic</div>
+            <h3 class="product-card__title">The Cozy Cuff</h3>
+            <p class="product-card__description">Plush cuff design with extra cushioning. Weighted hem for a gentle, grounding sensation.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$16.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">4.9</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" data-category="bundles">
+          <div class="product-card__badge"><span class="badge badge--secondary">Gift Ready</span></div>
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+              <span>Product Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <button class="btn btn--white btn--block btn--sm shopify-buy-button" data-product="resilience-bundle">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Gift Bundle</div>
+            <h3 class="product-card__title">The Care Package</h3>
+            <p class="product-card__description">Two pairs + a handwritten note card in a premium gift box. Send comfort directly to someone you love.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$34.99</span>
+              <div class="product-card__rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: var(--color-muted); margin-left: 4px;">5.0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" data-category="facility">
+          <div class="product-card__badge"><span class="badge badge--primary">Bulk</span></div>
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <span>Bulk Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <a href="facilities.html" class="btn btn--white btn--block btn--sm">Request Quote</a>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Healthcare Facility</div>
+            <h3 class="product-card__title">Facility Starter Pack</h3>
+            <p class="product-card__description">50-pair mixed-size pack for facility evaluation. Color-coded for fall risk compliance. Volume pricing available.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">$2.50/pair</span>
+              <a href="facilities.html" class="btn btn--ghost btn--sm" style="padding: 0; text-transform: none; letter-spacing: 0;">Get Quote &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card" data-category="facility">
+          <div class="product-card__image">
+            <div class="product-card__image-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              <span>Bulk Photo</span>
+            </div>
+            <div class="product-card__quick-add">
+              <a href="facilities.html" class="btn btn--white btn--block btn--sm">Request Quote</a>
+            </div>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Healthcare Facility</div>
+            <h3 class="product-card__title">Monthly Subscription</h3>
+            <p class="product-card__description">Automatic monthly delivery tailored to your facility's census. Never run out of premium grip socks.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">Custom Pricing</span>
+              <a href="facilities.html" class="btn btn--ghost btn--sm" style="padding: 0; text-transform: none; letter-spacing: 0;">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container text-center relative" style="z-index: 1;">
+      <div style="max-width: 540px; margin: 0 auto;">
+        <h2 class="h2">Can't Decide?</h2>
+        <p class="lead mt-4">Get 10% off your first order. We'll help you find the perfect pair.</p>
+        <form class="newsletter-form mx-auto mt-8" id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit" class="btn btn--accent">Get 10% Off</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><div class="logo-icon" style="background:rgba(255,255,255,0.15)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg></div>Grippy Sox Club</a>
+          <p>Premium comfort grip socks designed for mental health, self-care, and safety.</p>
+        </div>
+        <div><h4 class="footer-heading">Shop</h4><nav class="footer-links"><a href="shop.html">All Products</a><a href="shop.html">Gift Bundles</a><a href="shop.html">Bulk Orders</a></nav></div>
+        <div><h4 class="footer-heading">Company</h4><nav class="footer-links"><a href="about.html">Our Story</a><a href="facilities.html">For Facilities</a><a href="blog.html">Journal</a></nav></div>
+        <div><h4 class="footer-heading">Support</h4><nav class="footer-links"><a href="#">Shipping & Returns</a><a href="#">Size Guide</a><a href="#">FAQ</a></nav></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Grippy Sox Club. All rights reserved.</p>
+        <p>Made with care for those who need it most.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">Your Cart</h3>
+      <button class="cart-drawer__close" id="cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-drawer__items" id="cart-items">
+      <div class="cart-drawer__empty">
+        <h4 class="h4">Your cart is empty</h4>
+        <p class="mt-2 color-muted" style="font-size:var(--text-sm)">Add some cozy socks to get started.</p>
+      </div>
+    </div>
+    <div class="cart-drawer__footer" id="cart-footer" style="display:none;">
+      <div class="cart-drawer__subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
+      <button class="btn btn--primary btn--block btn--lg" id="checkout-btn">Checkout</button>
+      <p class="cart-drawer__shipping-note">Free shipping on orders over $50</p>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/shopify-buy.js"></script>
+</body>
+</html>

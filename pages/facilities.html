@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Healthcare Facilities — Bulk Non-Slip Socks | Grippy Sox Club</title>
+  <meta name="description" content="Premium non-slip socks for psychiatric hospitals and behavioral health facilities. Reduce fall risk, improve patient satisfaction. Request free samples today.">
+  <meta name="keywords" content="bulk hospital socks, non-slip socks for facilities, psychiatric hospital socks, behavioral health supplies, fall prevention socks, hospital grip socks wholesale">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧦</text></svg>">
+
+  <style>
+    .facility-hero { background: linear-gradient(160deg, var(--color-primary-dark) 0%, var(--color-primary) 100%); color: white; }
+    .facility-hero .lead { color: rgba(255,255,255,0.8); }
+    .roi-card { background: white; border-radius: var(--radius-xl); padding: var(--space-8); text-align: center; box-shadow: var(--shadow-lg); }
+    .roi-card__number { font-family: var(--font-display); font-size: var(--text-4xl); color: var(--color-primary); }
+    .roi-card__label { font-size: var(--text-sm); color: var(--color-muted); margin-top: var(--space-2); }
+    .form-group { margin-bottom: var(--space-5); }
+    .form-group label { display: block; font-size: var(--text-sm); font-weight: var(--weight-semibold); margin-bottom: var(--space-2); color: var(--color-charcoal); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md);
+      font-size: var(--text-sm); background: white; transition: border-color var(--duration-fast);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-50);
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    .process-step { display: flex; gap: var(--space-5); align-items: flex-start; }
+    .process-step__number { width: 48px; height: 48px; border-radius: var(--radius-full); background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold); font-size: var(--text-lg); flex-shrink: 0; }
+    .process-step__content { flex: 1; }
+    .process-step__title { font-weight: var(--weight-semibold); margin-bottom: var(--space-1); }
+    .process-step__text { font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed); }
+    .logos-bar { display: flex; align-items: center; justify-content: center; gap: var(--space-10); flex-wrap: wrap; opacity: 0.5; }
+    .logo-placeholder { padding: var(--space-3) var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: var(--text-xs); font-weight: var(--weight-semibold); letter-spacing: var(--tracking-wider); text-transform: uppercase; color: var(--color-light-muted); }
+    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="page-transition">
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><div class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg></div>Grippy Sox Club</a>
+      <nav class="nav-main" id="nav-main">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">Our Story</a>
+        <a href="facilities.html" class="nav-link active">For Facilities</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#sample-form" class="btn btn--primary btn--sm">Request Samples</a>
+        <button class="cart-button" id="cart-toggle" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="facility-hero section--lg">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
+        <div class="reveal-left">
+          <span class="overline" style="color: rgba(255,255,255,0.6);">For Healthcare Facilities</span>
+          <h1 class="display mt-4" style="color: white;">Upgrade Patient Comfort. Reduce Fall Risk.</h1>
+          <p class="lead mt-6">Premium non-slip socks designed for psychiatric and behavioral health facilities. Better comfort, better compliance, better outcomes.</p>
+          <div class="flex gap-4 mt-8" style="flex-wrap: wrap;">
+            <a href="#sample-form" class="btn btn--accent btn--lg">Request Free Samples</a>
+            <a href="#roi" class="btn btn--white btn--lg">See the ROI</a>
+          </div>
+        </div>
+        <div class="reveal-right" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+          <div class="roi-card">
+            <div class="roi-card__number">$14K+</div>
+            <div class="roi-card__label">Average cost per patient fall</div>
+          </div>
+          <div class="roi-card">
+            <div class="roi-card__number">60%</div>
+            <div class="roi-card__label">Of falls involve improper footwear</div>
+          </div>
+          <div class="roi-card">
+            <div class="roi-card__number">Zero</div>
+            <div class="roi-card__label">Falls with proper non-slip socks (clinical study)</div>
+          </div>
+          <div class="roi-card">
+            <div class="roi-card__number">2-8</div>
+            <div class="roi-card__label">Week setup — no committees needed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Logos -->
+  <section class="section--sm bg-cream">
+    <div class="container text-center">
+      <p class="caption mb-6">Trusted by behavioral health facilities nationwide</p>
+      <div class="logos-bar">
+        <div class="logo-placeholder">Facility Partner</div>
+        <div class="logo-placeholder">Facility Partner</div>
+        <div class="logo-placeholder">Facility Partner</div>
+        <div class="logo-placeholder">Facility Partner</div>
+        <div class="logo-placeholder">Facility Partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Section -->
+  <section class="section" id="roi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">The Business Case</span>
+        <h2 class="h2">Premium Socks Pay for Themselves</h2>
+        <p class="lead">The math is simple: one prevented fall saves more than a year's worth of sock upgrades.</p>
+      </div>
+
+      <div class="comparison reveal">
+        <div class="comparison__side comparison__side--old">
+          <div class="comparison__label">Standard Commodity Socks</div>
+          <h3 class="comparison__title">$0.80/pair</h3>
+          <div class="comparison__list">
+            <div class="comparison__item"><div class="comparison__icon">&times;</div><span>Low patient compliance — patients refuse to wear them</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&times;</div><span>Grip wears off after first use</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&times;</div><span>One-size-fits-all — bunching creates trip hazard</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&times;</div><span>Patients walk barefoot instead</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&times;</div><span>Institutional feel undermines therapeutic environment</span></div>
+          </div>
+        </div>
+        <div class="comparison__side comparison__side--new">
+          <div class="comparison__label">Grippy Sox Club</div>
+          <h3 class="comparison__title">$2.00–$3.50/pair</h3>
+          <div class="comparison__list">
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>Near-100% compliance — patients want to wear them</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>Medical-grade silicone maintains grip for 50+ washes</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>4 sizes with true-fit elastic</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>Color-coded for fall risk compliance</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>Behavioral health safe — no ligature risk</span></div>
+            <div class="comparison__item"><div class="comparison__icon">&#10003;</div><span>Premium comfort supports therapeutic goals</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 reveal" style="max-width: 640px; margin-left: auto; margin-right: auto;">
+        <div style="background: var(--color-primary-50); border: 1px solid var(--color-primary-200); border-radius: var(--radius-lg); padding: var(--space-6); margin-top: var(--space-8);">
+          <h4 class="h4 color-primary">The ROI Calculation</h4>
+          <p class="mt-2" style="font-size: var(--text-sm); color: var(--color-muted); line-height: var(--leading-relaxed);">
+            A 75-bed facility uses ~6,000 pairs/year. Upgrading from $0.80 to $2.50/pair costs an additional <strong style="color: var(--color-charcoal);">$10,200/year</strong>. One prevented fall saves <strong style="color: var(--color-charcoal);">$14,000–$30,000</strong>. The upgrade pays for itself after preventing a single incident.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">Getting Started</span>
+        <h2 class="h2">Simple as 1-2-3</h2>
+        <p class="lead">No GPO contracts, no committee approvals, no long sales cycles. As a low-cost consumable supply, premium socks can be ordered by a single facility administrator.</p>
+      </div>
+
+      <div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-8);" class="stagger-children">
+        <div class="process-step">
+          <div class="process-step__number">1</div>
+          <div class="process-step__content">
+            <div class="process-step__title">Request Free Samples</div>
+            <div class="process-step__text">Fill out the form below and we'll ship a complimentary sample kit with multiple sizes and styles within 2-3 business days. No obligation, no sales pressure.</div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">2</div>
+          <div class="process-step__content">
+            <div class="process-step__title">Try Them on Your Unit</div>
+            <div class="process-step__text">Share samples with nursing staff and patients. We include feedback cards to capture first impressions. Most facilities know within a week that patients prefer our socks.</div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">3</div>
+          <div class="process-step__content">
+            <div class="process-step__title">Place Your First Order</div>
+            <div class="process-step__text">No minimum order required. Volume discounts start at 500 pairs. We offer monthly auto-ship based on your census, or order as needed. Net-30 terms available for verified facilities.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">From the Floor</span>
+        <h2 class="h2">What Healthcare Teams Say</h2>
+      </div>
+      <div class="grid grid--3 stagger-children">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">"Our patients actually want to wear these. Compliance went from maybe 60% with the old socks to nearly 100%. The grip is noticeably better and patients comment on the comfort every day."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">R</div>
+            <div><div class="testimonial-card__name">Rachel S., RN</div><div class="testimonial-card__role">Director of Nursing, Freestanding Psychiatric Facility</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">"I was skeptical about the price premium, but the fall prevention argument sold me. We've had zero sock-related incidents since switching. The cost savings on liability alone justify the investment."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">D</div>
+            <div><div class="testimonial-card__name">David M.</div><div class="testimonial-card__role">Facility Administrator</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__quote">"Small details matter in behavioral health. When patients feel cared for, therapeutic outcomes improve. These socks send a message that we value their comfort and dignity."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">L</div>
+            <div><div class="testimonial-card__name">Dr. Lisa K.</div><div class="testimonial-card__role">Chief Medical Officer</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sample Request Form -->
+  <section class="section bg-cream" id="sample-form">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start;">
+        <div class="reveal-left">
+          <span class="overline">Free Samples</span>
+          <h2 class="h2 mt-4">Request Your Sample Kit</h2>
+          <p class="mt-4" style="color: var(--color-muted); line-height: var(--leading-relaxed);">
+            We'll send you a complimentary kit containing 2-3 pairs in different sizes, a comparison card, fall prevention data, and an ROI calculator. No obligation, no sales pressure.
+          </p>
+          <div class="mt-8" style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div class="comparison__item">
+              <div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>
+              <span>Free shipping — no cost to you</span>
+            </div>
+            <div class="comparison__item">
+              <div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>
+              <span>Ships within 2-3 business days</span>
+            </div>
+            <div class="comparison__item">
+              <div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>
+              <span>Multiple sizes included</span>
+            </div>
+            <div class="comparison__item">
+              <div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>
+              <span>Includes ROI calculator & clinical data</span>
+            </div>
+            <div class="comparison__item">
+              <div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>
+              <span>Zero obligation — no follow-up calls unless you want them</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal-right">
+          <form id="facility-form" style="background: white; border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-lg);">
+            <h3 class="h3 mb-6">Tell Us About Your Facility</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" required placeholder="Jane">
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" required placeholder="Smith">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" required placeholder="jane@facility.com">
+            </div>
+
+            <div class="form-group">
+              <label for="facility">Facility Name *</label>
+              <input type="text" id="facility" required placeholder="Sunrise Behavioral Health">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="role">Your Role *</label>
+                <select id="role" required>
+                  <option value="">Select your role</option>
+                  <option>Director of Nursing / Nurse Manager</option>
+                  <option>Procurement / Materials Management</option>
+                  <option>Risk Manager / Patient Safety</option>
+                  <option>Facility Administrator / CEO</option>
+                  <option>Chief Nursing Officer</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="beds">Facility Size (Beds)</label>
+                <select id="beds">
+                  <option value="">Select range</option>
+                  <option>Under 25 beds</option>
+                  <option>25-50 beds</option>
+                  <option>50-100 beds</option>
+                  <option>100-200 beds</option>
+                  <option>200+ beds</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Shipping Address *</label>
+              <input type="text" id="address" required placeholder="123 Healthcare Blvd, Suite 200">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" required>
+              </div>
+              <div class="form-group">
+                <label for="state">State *</label>
+                <input type="text" id="state" required placeholder="CA">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="zip">ZIP Code *</label>
+              <input type="text" id="zip" required placeholder="90210" style="max-width: 200px;">
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Anything else we should know?</label>
+              <textarea id="notes" placeholder="Current sock supplier, specific size needs, timeline for evaluation..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--block">Ship My Free Sample Kit</button>
+            <p style="font-size: var(--text-xs); color: var(--color-light-muted); margin-top: var(--space-3); text-align: center;">We respect your privacy. No spam, no aggressive follow-up.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Tiers -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">Pricing</span>
+        <h2 class="h2">Volume Pricing</h2>
+        <p class="lead">Transparent pricing that rewards commitment. All prices include standard shipping.</p>
+      </div>
+
+      <div class="grid grid--3 stagger-children">
+        <div class="card card--bordered" style="padding: var(--space-8);">
+          <div class="overline color-primary mb-4">Starter</div>
+          <div style="font-family: var(--font-display); font-size: var(--text-3xl); margin-bottom: var(--space-2);">$3.50</div>
+          <div class="caption mb-6">per pair &bull; 1-499 pairs</div>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3); font-size: var(--text-sm);">
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>No minimum order</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>All sizes available</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Color-coded options</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Free shipping</div>
+          </div>
+          <a href="#sample-form" class="btn btn--outline btn--block mt-8">Get Started</a>
+        </div>
+
+        <div class="card card--bordered" style="padding: var(--space-8); border-color: var(--color-primary); position: relative;">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50);"><span class="badge badge--primary">Most Popular</span></div>
+          <div class="overline color-primary mb-4">Growth</div>
+          <div style="font-family: var(--font-display); font-size: var(--text-3xl); margin-bottom: var(--space-2);">$2.75</div>
+          <div class="caption mb-6">per pair &bull; 500-2,499 pairs</div>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3); font-size: var(--text-sm);">
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>21% volume discount</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Monthly auto-ship available</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Net-30 terms</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Dedicated account manager</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Custom packaging available</div>
+          </div>
+          <a href="#sample-form" class="btn btn--primary btn--block mt-8">Request Quote</a>
+        </div>
+
+        <div class="card card--bordered" style="padding: var(--space-8);">
+          <div class="overline color-primary mb-4">Enterprise</div>
+          <div style="font-family: var(--font-display); font-size: var(--text-3xl); margin-bottom: var(--space-2);">$2.00</div>
+          <div class="caption mb-6">per pair &bull; 2,500+ pairs</div>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3); font-size: var(--text-sm);">
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>43% volume discount</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Custom branding options</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Multi-facility pricing</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Priority shipping</div>
+            <div class="comparison__item"><div class="comparison__icon" style="background: var(--color-primary); color: white;">&#10003;</div>Quarterly business reviews</div>
+          </div>
+          <a href="#sample-form" class="btn btn--outline btn--block mt-8">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-cream">
+    <div class="container container--narrow">
+      <div class="section-header reveal">
+        <span class="overline">FAQ</span>
+        <h2 class="h2">Common Questions</h2>
+      </div>
+
+      <div class="product-details-accordion reveal" style="background: white; border-radius: var(--radius-xl); padding: var(--space-6) var(--space-8); box-shadow: var(--shadow-sm);">
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+            Do we need GPO approval to purchase?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">No. Non-slip socks are low-cost consumable supplies, not capital equipment. Most facilities can purchase directly without GPO involvement. Over 25% of hospital purchases occur outside GPO contracts, especially for non-clinical comfort items.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+            Are these socks behavioral health safe?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">Yes. Our socks contain no drawstrings, no removable parts, and no ligature risk points. They're designed specifically for psychiatric and behavioral health settings, meeting the strictest safety standards.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+            Do you offer color-coded fall risk socks?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">Yes. We offer industry-standard color coding: yellow (standard fall risk), red (high fall risk), and green (low/no fall risk). Custom color requests are available for Enterprise accounts.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+            What sizes are available?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content">Four sizes: S (Women's 4-6 / Youth), M (Women's 7-10 / Men's 6-8), L (Men's 9-12 / Women's 11+), XL (Men's 13+). All bulk orders can be customized to your facility's size distribution.</div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open');">
+            How long is the sales cycle?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="accordion-content" style="border-bottom: none;">Typically 2-8 weeks from sample request to first order for freestanding behavioral health facilities. Larger health systems with Value Analysis Committees may take longer, but we provide all the clinical data and ROI documentation needed to support the evaluation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="../index.html" class="logo"><div class="logo-icon" style="background:rgba(255,255,255,0.15)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V3"/><path d="M3 7l9-4 9 4"/></svg></div>Grippy Sox Club</a><p>Premium comfort grip socks for mental health, self-care, and safety.</p></div>
+        <div><h4 class="footer-heading">Shop</h4><nav class="footer-links"><a href="shop.html">All Products</a><a href="shop.html">Gift Bundles</a></nav></div>
+        <div><h4 class="footer-heading">Company</h4><nav class="footer-links"><a href="about.html">Our Story</a><a href="facilities.html">For Facilities</a><a href="blog.html">Journal</a></nav></div>
+        <div><h4 class="footer-heading">Support</h4><nav class="footer-links"><a href="#">Shipping & Returns</a><a href="#">Size Guide</a><a href="#">FAQ</a></nav></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 Grippy Sox Club.</p><p>Made with care.</p></div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <div class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header"><h3 class="cart-drawer__title">Your Cart</h3><button class="cart-drawer__close" id="cart-close">&times;</button></div>
+    <div class="cart-drawer__items" id="cart-items"><div class="cart-drawer__empty"><h4 class="h4">Your cart is empty</h4></div></div>
+    <div class="cart-drawer__footer" id="cart-footer" style="display:none;"><div class="cart-drawer__subtotal"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div><button class="btn btn--primary btn--block btn--lg" id="checkout-btn">Checkout</button></div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/shopify-buy.js"></script>
+</body>
+</html>
